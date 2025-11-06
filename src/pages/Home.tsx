@@ -1,0 +1,38 @@
+import { Box, Container, Heading, Text, Card, Flex } from '@radix-ui/themes';
+
+function Home() {
+    return (
+        <Container size="3" py="6">
+            <Box>
+                <Heading size="8" mb="4">
+                    ยินดีต้อนรับ
+                </Heading>
+                <Text size="5" mb="6" color="gray">
+                    แนะนำตัวและประวัติส่วนตัว
+                </Text>
+                <Flex direction="column" gap="4">
+                    <Card>
+                        <Heading size="5" mb="2">
+                            เกี่ยวกับเว็บไซต์
+                        </Heading>
+                        <Text>
+                            เว็บไซต์สร้างขึ้นเพื่อแนะนำข้อมูลส่วนตัว ประวัติการศึกษา
+                            และความสามารถต่างๆ โดยใช้ React, React Router และ Radix UI
+                        </Text>
+                    </Card>
+                    <Card>
+                        <Heading size="5" mb="2">
+                            เทคโนโลยี
+                        </Heading>
+                        <Text>
+                            React 19 + TypeScript<br />
+                            React Router สำหรับการจัดการหน้า<br />
+                            Radix UI สำหรับ UI Components<br />
+                            Vite สำหรับ Build Tool
+                        </Text>
+                    </Card>
+                </Flex>
+            </Box>
+        </Container>
+    );
+}export default Home;
